@@ -37,6 +37,11 @@ sudo tc qdisc add dev <network interface name> root netem loss 50%
 ```
 then it will be like this!
 [image](https://user-images.githubusercontent.com/90664935/223033841-aff63f25-8085-4bcc-b88c-8b5c525179bf.png)
+  
+and if you want it stop. You can use the following instruction
+```bash=
+sudo tc qdisc del dev <network interface name> root netem
+```
 
 ## How It Works
 The client sends a message to the server using the sendto() function. The server receives the message using the recvfrom() function and echoes the same message back to the client using the sendto() function.
