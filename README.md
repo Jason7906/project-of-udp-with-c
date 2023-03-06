@@ -11,7 +11,7 @@ git clone https://github.com/Jason7906/udp-client-server.git
 
 Compile the client and server programs:
 ```bash=
-gcc client.c -o client
+gcc client.c -o client -lm
 gcc server.c -o server
 ```
 Run the server:
