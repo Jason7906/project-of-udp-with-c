@@ -47,6 +47,7 @@ sudo tc qdisc del dev <network interface name> root netem
 The client sends a message to the server using the sendto() function. The server receives the message using the recvfrom() function and echoes the same message back to the client using the sendto() function.
 
 The client uses a timeout mechanism to handle situations where the server does not respond within a certain amount of time. The client will retry sending the message up to a maximum number of times.
-
+## Demo video
+https://youtu.be/Ze8CAZni9mc
 ## License
 This project is licensed by Jason
