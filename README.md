@@ -29,6 +29,15 @@ Run the client:
 ```
 Where <server-ip> is the IP address of the server, <server-port> is the port number on which the server is listening, and <message> is the message you want to send to the server.
 
+## How to do retry test
+use traggic tool on Linux to simulate a congested network with packet loss
+in my case because i use local network so the <network interface name> is lo
+```bash=
+sudo tc qdisc add dev <network interface name> root netem loss 50%
+```
+then it will be like this!
+[image](https://user-images.githubusercontent.com/90664935/223033841-aff63f25-8085-4bcc-b88c-8b5c525179bf.png)
+
 ## How It Works
 The client sends a message to the server using the sendto() function. The server receives the message using the recvfrom() function and echoes the same message back to the client using the sendto() function.
 
