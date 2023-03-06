@@ -1,3 +1,10 @@
+---
+markdown:
+  image_dir: /assets
+  path: output.md
+  ignore_from_front_matter: true
+  absolute_image_path: false
+---
 # UDP Client-Server Communication
 This is a simple implementation of UDP client-server communication in C programming language. The client sends a message to the server, and the server echoes the same message back to the client.
 
